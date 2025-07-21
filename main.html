@@ -28,8 +28,8 @@
             padding: 40px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             border: 1px solid rgba(255, 255, 255, 0.2);
-            width: 70vw;
-            max-width: 1020px;
+            width: 119vw;
+            max-width: 1734px;
             height: 85vh;
             display: flex;
             flex-direction: column;
@@ -41,7 +41,7 @@
             padding: 30px;
             margin-bottom: 30px;
             text-align: right;
-            min-height: 210px;
+            min-height: 84px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -126,10 +126,13 @@
         
         .btn-equals {
             background: linear-gradient(145deg, #4ecdc4 0%, #44a08d 100%);
-            grid-column: span 2;
         }
         
         .btn-zero {
+            grid-column: span 2;
+        }
+        
+        .btn-equals {
             grid-column: span 2;
         }
         
@@ -167,7 +170,7 @@
             <button class="btn btn-number" onclick="appendNumber('7')">7</button>
             <button class="btn btn-number" onclick="appendNumber('8')">8</button>
             <button class="btn btn-number" onclick="appendNumber('9')">9</button>
-            <button class="btn btn-operator" onclick="appendOperator('-')">−</button>
+            <button class="btn btn-operator" onclick="appendOperator('+')">+</button>
             
             <button class="btn btn-number" onclick="appendNumber('4')">4</button>
             <button class="btn btn-number" onclick="appendNumber('5')">5</button>
@@ -180,9 +183,8 @@
             <button class="btn btn-number" onclick="appendNumber('.')">.</button>
             
             <button class="btn btn-number btn-zero" onclick="appendNumber('0')">0</button>
-            <button class="btn btn-operator" onclick="appendOperator('+')">+</button>
+            <button class="btn btn-equals" onclick="calculate()">=</button>
             
-            <button class="btn btn-equals" onclick="calculate()" style="grid-column: span 4;">=</button>
         </div>
     </div>
 

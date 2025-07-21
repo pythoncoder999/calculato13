@@ -28,7 +28,7 @@
             padding: 40px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             border: 1px solid rgba(255, 255, 255, 0.2);
-            width: 90vw;
+            width: 70vw;
             max-width: 1020px;
             height: 85vh;
             display: flex;
@@ -38,10 +38,10 @@
         .display {
             background: rgba(0, 0, 0, 0.8);
             border-radius: 20px;
-            padding: 20px;
+            padding: 30px;
             margin-bottom: 30px;
             text-align: right;
-            min-height: 75px;
+            min-height: 210px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -50,7 +50,7 @@
         
         .display-main {
             color: white;
-            font-size: 2.5rem;
+            font-size: 3.5rem;
             font-weight: 300;
             word-break: break-all;
             overflow: hidden;
@@ -58,9 +58,9 @@
         
         .display-history {
             color: rgba(255, 255, 255, 0.6);
-            font-size: 1rem;
-            margin-bottom: 8px;
-            height: 1.2rem;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            height: 1.5rem;
         }
         
         .buttons {
@@ -81,7 +81,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            min-height: 80px;
+            min-height: 56px;
             color: white;
             position: relative;
             overflow: hidden;
@@ -130,7 +130,7 @@
         }
         
         .btn-zero {
-            grid-column: span 1;
+            grid-column: span 2;
         }
         
         @media (max-width: 768px) {
@@ -172,7 +172,7 @@
             <button class="btn btn-number" onclick="appendNumber('4')">4</button>
             <button class="btn btn-number" onclick="appendNumber('5')">5</button>
             <button class="btn btn-number" onclick="appendNumber('6')">6</button>
-            <button class="btn btn-operator" onclick="appendOperator('+')">+</button>
+            <button class="btn btn-operator" onclick="appendOperator('-')">−</button>
             
             <button class="btn btn-number" onclick="appendNumber('1')">1</button>
             <button class="btn btn-number" onclick="appendNumber('2')">2</button>
@@ -180,7 +180,9 @@
             <button class="btn btn-number" onclick="appendNumber('.')">.</button>
             
             <button class="btn btn-number btn-zero" onclick="appendNumber('0')">0</button>
-            <button class="btn btn-equals" onclick="calculate()" colspan="2">=</button>
+            <button class="btn btn-operator" onclick="appendOperator('+')">+</button>
+            
+            <button class="btn btn-equals" onclick="calculate()" style="grid-column: span 4;">=</button>
         </div>
     </div>
 
